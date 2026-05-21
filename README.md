@@ -2,4 +2,4 @@
 
 ## License
 
-This uses MIT and CC-BY-SA-4.0 license.
+This mod uses MIT and CC-BY-SA-4.0 license.
