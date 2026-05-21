@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "cheapapple-the-rock",
-	"version": "67.1",
+	"version": "1.0.0",
 	"name": "Cheapapple the Rock!",
 	"description": "Brooo",
 	"authors": [
@@ -9,8 +9,8 @@
 		"swqGate"
 	],
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod",
-		"issues": "https://example.com"
+		"sources": "https://github.com/swqGate/CheapappleTheRock",
+		"issues": "https://github.com/swqGate/CheapappleTheRock/issues"
 	},
 	"license": [
 		"CC-BY-SA-4.0",
