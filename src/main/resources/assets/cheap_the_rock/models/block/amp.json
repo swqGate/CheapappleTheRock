@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "cheap_the_rock:block/amp_front",
+    "side": "cheap_the_rock:block/amp_side",
+    "top": "cheap_the_rock:block/amp_top",
+    "bottom": "cheap_the_rock:block/amp_side"
+  }
+}

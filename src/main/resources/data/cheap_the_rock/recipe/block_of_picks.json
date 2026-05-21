@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "cheap_the_rock:pick"
+  },
+  "result": {
+    "id": "cheap_the_rock:block_of_picks"
+  }
+}

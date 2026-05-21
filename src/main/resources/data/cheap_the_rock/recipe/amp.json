@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    ".N."
+  ],
+  "key": {
+    "#": "minecraft:comparator",
+    ".": "minecraft:redstone",
+    "N": "cheap_the_rock:block_of_picks"
+  },
+  "result": {
+    "id": "cheap_the_rock:amp"
+  }
+}

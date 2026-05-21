@@ -1,0 +1,26 @@
+{
+  "distortion_guitar": {
+    "subtitle": "subtitles.cheap_the_rock.distortion_guitar",
+    "sounds": [
+      "cheap_the_rock:distortion_guitar"
+    ]
+  },
+  "electric_guitar": {
+    "subtitle": "subtitles.cheap_the_rock.electric_guitar",
+    "sounds": [
+      "cheap_the_rock:electric_guitar"
+    ]
+  },
+  "skull_guitar": {
+    "subtitle": "subtitles.cheap_the_rock.skull_guitar",
+    "sounds": [
+      "cheap_the_rock:skull_guitar"
+    ]
+  },
+  "sans_synth": {
+    "subtitle": "subtitles.cheap_the_rock.sans_synth",
+    "sounds": [
+      "cheap_the_rock:sans_synth"
+    ]
+  }
+}

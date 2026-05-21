@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "PpP",
+    " S "
+  ],
+  "key": {
+    "#": "minecraft:pink_tulip",
+    "P": "minecraft:pink_wool",
+    "p": "minecraft:pink_dye",
+    "S": "minecraft:stone"
+  },
+  "result": {
+    "id": "cheap_the_rock:bocchi_rock"
+  }
+}

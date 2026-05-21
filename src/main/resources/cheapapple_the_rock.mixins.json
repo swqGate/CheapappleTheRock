@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "cheapapple.cheap_the_rock.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "NoteBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

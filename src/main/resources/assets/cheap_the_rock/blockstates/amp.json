@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cheap_the_rock:block/amp"
+    },
+    "facing=east": {
+      "model": "cheap_the_rock:block/amp",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cheap_the_rock:block/amp",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cheap_the_rock:block/amp",
+      "y": 270
+    }
+  }
+}

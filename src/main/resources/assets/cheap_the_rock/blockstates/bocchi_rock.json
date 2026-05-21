@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cheap_the_rock:block/bocchi_rock"
+    },
+    "facing=north_east": {
+      "model": "cheap_the_rock:block/bocchi_rock_rotated"
+    },
+    "facing=east": {
+      "model": "cheap_the_rock:block/bocchi_rock",
+      "y": 90
+    },
+    "facing=south_east": {
+      "model": "cheap_the_rock:block/bocchi_rock_rotated",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "cheap_the_rock:block/bocchi_rock",
+      "y": 180
+    },
+    "facing=south_west": {
+      "model": "cheap_the_rock:block/bocchi_rock_rotated",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "cheap_the_rock:block/bocchi_rock",
+      "y": 270
+    },
+    "facing=north_west": {
+      "model": "cheap_the_rock:block/bocchi_rock_rotated",
+      "y": 90
+    }
+  }
+}

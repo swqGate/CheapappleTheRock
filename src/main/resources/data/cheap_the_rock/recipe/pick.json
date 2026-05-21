@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cheap_the_rock:bocchi_rock",
+  "result": {
+    "id": "cheap_the_rock:pick",
+    "count": 3
+  }
+}

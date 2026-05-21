@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cheap_the_rock:block/block_of_picks"
+  }
+}
