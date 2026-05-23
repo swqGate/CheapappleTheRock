@@ -3,7 +3,6 @@ package cheapapple.cheap_the_rock.item;
 import cheapapple.cheap_the_rock.entity.BocchiRockEntity;
 import cheapapple.cheap_the_rock.init.ModSounds;
 import net.minecraft.block.Block;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.BlockItem;
