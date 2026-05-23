@@ -1,26 +1,35 @@
 {
-  "distortion_guitar": {
+  "block.note_block.distortion_guitar": {
     "subtitle": "subtitles.cheap_the_rock.distortion_guitar",
     "sounds": [
       "cheap_the_rock:distortion_guitar"
     ]
   },
-  "electric_guitar": {
+  "block.note_block.electric_guitar": {
     "subtitle": "subtitles.cheap_the_rock.electric_guitar",
     "sounds": [
       "cheap_the_rock:electric_guitar"
     ]
   },
-  "skull_guitar": {
+  "block.note_block.skull_guitar": {
     "subtitle": "subtitles.cheap_the_rock.skull_guitar",
     "sounds": [
       "cheap_the_rock:skull_guitar"
     ]
   },
-  "sans_synth": {
+  "block.note_block.sans_synth": {
     "subtitle": "subtitles.cheap_the_rock.sans_synth",
     "sounds": [
       "cheap_the_rock:sans_synth"
+    ]
+  },
+  "entity.rock.throw": {
+    "subtitle": "subtitles.cheap_the_rock.rock_throw",
+    "sounds": [
+      {
+        "name": "entity.arrow.shoot",
+        "type": "event"
+      }
     ]
   }
 }

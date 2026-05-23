@@ -12,12 +12,12 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class BocchiRockEntity extends ThrownItemEntity {
@@ -42,6 +42,17 @@ public class BocchiRockEntity extends ThrownItemEntity {
         super.tick();
 
         if (this.getBlockStateAtPos().getFluidState().isIn(ConventionalFluidTags.WATER) && this.getWorld().getBlockState(this.getBlockPos().up()).isAir()) {
+            for (int i = 0; i < random.nextBetween(6, 10); i++) {
+                this.getWorld().addParticleClient(
+                        ParticleTypes.SPLASH,
+                        this.getPos().x,
+                        this.getPos().y,
+                        this.getPos().z,
+                        this.random.nextDouble() * 3,
+                        0.2,
+                        this.random.nextDouble() * 3
+                );
+            }
             this.setVelocity(this.getVelocity().multiply(0.6, -0.7, 0.6));
             this.velocityModified = true;
         }
