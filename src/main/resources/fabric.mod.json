@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "cheapapple-the-rock",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "Cheapapple the Rock!",
 	"description": "Brooo",
 	"authors": [
@@ -13,8 +13,7 @@
 		"issues": "https://github.com/swqGate/CheapappleTheRock/issues"
 	},
 	"license": [
-		"CC-BY-SA-4.0",
-		"MIT"
+		"GPL-3.0-only"
 	],
 	"icon": "assets/cheap_the_rock/icon.png",
 	"environment": "*",
@@ -31,7 +30,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
-		"minecraft": "~1.21.5",
+		"minecraft": "~1.21.11",
 		"java": ">=21",
 		"fabric-api": "*"
 	}
