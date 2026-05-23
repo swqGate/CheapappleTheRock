@@ -41,37 +41,37 @@ public class BocchiRockEntity extends ThrownItemEntity {
     public void tick() {
         super.tick();
 
-        if (this.getBlockStateAtPos().getFluidState().isIn(ConventionalFluidTags.WATER) && this.getWorld().getBlockState(this.getBlockPos().up()).isAir()) {
+        if (this.getBlockStateAtPos().getFluidState().isIn(ConventionalFluidTags.WATER) && this.getEntityWorld().getBlockState(this.getBlockPos().up()).isAir()) {
             for (int i = 0; i < random.nextBetween(6, 10); i++) {
-                this.getWorld().addParticleClient(
+                this.getEntityWorld().addParticleClient(
                         ParticleTypes.SPLASH,
-                        this.getPos().x,
-                        this.getPos().y,
-                        this.getPos().z,
+                        this.getEntityPos().x,
+                        this.getEntityPos().y,
+                        this.getEntityPos().z,
                         this.random.nextDouble() * 3,
                         0.2,
                         this.random.nextDouble() * 3
                 );
             }
             this.setVelocity(this.getVelocity().multiply(0.6, -0.7, 0.6));
-            this.velocityModified = true;
+            this.velocityDirty = true;
         }
     }
 
     @Override
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-        if (!this.getWorld().isClient) {
+        if (!this.getEntityWorld().isClient()) {
             if (hitResult.getType() == HitResult.Type.BLOCK && hitResult instanceof BlockHitResult blockHit) {
                 BlockPos blockPos = blockHit.getBlockPos();
-                BlockState blockState = this.getWorld().getBlockState(blockPos);
+                BlockState blockState = this.getEntityWorld().getBlockState(blockPos);
 
                 if (!blockState.isAir() && (blockState.isIn(ConventionalBlockTags.GLASS_BLOCKS) || blockState.isIn(ConventionalBlockTags.GLASS_PANES))) {
-                    this.getWorld().breakBlock(blockPos, true, this.getOwner());
+                    this.getEntityWorld().breakBlock(blockPos, true, this.getOwner());
                 }
             }
-            this.getWorld().sendEntityStatus(this, EntityStatuses.PLAY_DEATH_SOUND_OR_ADD_PROJECTILE_HIT_PARTICLES);
-            this.dropStack((ServerWorld) this.getWorld(), new ItemStack(ModBlocks.BOCCHI_ROCK_ITEM, 1));
+            this.getEntityWorld().sendEntityStatus(this, EntityStatuses.PLAY_DEATH_SOUND_OR_ADD_PROJECTILE_HIT_PARTICLES);
+            this.dropStack((ServerWorld) this.getEntityWorld(), new ItemStack(ModBlocks.BOCCHI_ROCK_ITEM, 1));
             this.discard();
         }
     }

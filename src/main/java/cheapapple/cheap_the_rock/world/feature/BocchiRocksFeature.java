@@ -31,9 +31,8 @@ public class BocchiRocksFeature extends Feature<DefaultFeatureConfig> {
             BlockPos floorPos = targetPos.down();
 
             if (world.getBlockState(floorPos).isOf(Blocks.GRASS_BLOCK)) {
-
                 world.setBlockState(targetPos, Blocks.PINK_TULIP.getDefaultState(), 2);
-                
+
                 BlockPos rockPos = targetPos.east();
                 if (world.getBlockState(rockPos).isAir() && world.getBlockState(rockPos.down()).isOf(Blocks.GRASS_BLOCK)) {
                     BlockState rockState = ModBlocks.BOCCHI_ROCK.getDefaultState().with(BocchiRockBlock.FACING, EightDirection.values()[random.nextBetween(0, 7)]);
